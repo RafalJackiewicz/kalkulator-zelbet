@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Zelbet</title>
+  <!--Czcionka-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Arkusz stylów -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <div class="header">
+
+  </div>
+  <h2>Geometria:</h2>
+  <table>
+    <tr>
+      <td>h [mm]</td>
+      <td>
+        <input class="calculationData" type="text" value="600" name="heightOfBeam_h" size="3">
+      </td>
+    </tr>
+    <tr>
+      <td>b [mm]</td>
+      <td>
+        <input class="calculationData" type="text" value="400" name="widthOfBeam_bw" size="3">
+      </td>
+    </tr>
+    <tr>
+      <td>a [mm]</td>
+      <td>
+        <input class="calculationData" type="text" value="50" name="distanceToReinforcement_a" size="3">
+      </td>
+    </tr>
+    <tr>
+      <td>As1 [cm2]</td>
+      <td>
+        <input class="calculationData" type="text" value="5" name="areaOfTensionReinforcement_As1" size="3">
+      </td>
+    </tr>
+    <tr>
+      <td><label>ø strzemion</label></td>
+      <td>
+        <select class="dataDiameterStirrup">
+          <option value="6">6</option>
+          <option value="8">8</option>
+          <option selected="selected" value="10">10</option>
+          <option value="12">12</option>
+          <option value="14">14</option>
+          <option value="16">16</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label>n-cięte</label></td>
+      <td>
+        <select class="dataPlaneShearing">
+          <option value="2">2</option>
+          <option selected="selected" value="4">4</option>
+          <option value="6">6</option>
+          <option value="8">8</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+  <hr>
+  <h2>Materiały:</h2>
+  <table>
+    <tr>
+      <td>
+        <label>Klasa betonu:</label>
+      </td>
+      <td>
+        <select class="classesOfConcrete">
+          <option value="C12/15">C12/15</option>
+          <option value="C16/20">C16/20</option>
+          <option value="C20/25">C20/25</option>
+          <option value="C25/30">C25/30</option>
+          <option selected="selected" value="C30/37">C30/37</option>
+          <option value="C35/45">C35/45</option>
+          <option value="C40/50">C40/50</option>
+          <option value="C45/55">C45/55</option>
+          <option value="C50/60">C50/60</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Klasa stali:</label>
+      </td>
+      <td>
+        <select class="classesOfSteel">
+          <option value="400">B400</option>
+          <option selected="selected" value="500">B500</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+
+  <hr>
+  <h2>Parametry:</h2>
+<table>
+  <tr>
+    <td>VEd [kN]</td>
+    <td>
+        <input class="calculationData" type="text" value="100" name="designValueOfShearForce" size="3">
+    </td>
+  </tr>
+  <td>Wytężenie [%]</td>
+  <td>
+      <input class="calculationData" type="text" value="80" name="capacityOfLoad" size="3">
+  </td>
+</tr>
+<td>Kąt θ [-]</td>
+<td>
+    <input class="calculationData" type="text" value="45" name="thetaAngle" size="3">
+</td>
+</tr>
+</table>
+
+<div class="calculationResult">
+  <p class="kotkot">ddd</p>
+</div>
+
+<div class="footer">
+
+</div>
+<div class="footer2">
+
+</div>
+  <script src="script/scinanie-belka.js" charset="utf-8" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+body{
+  background-color:#F6F7D7;
+  font-family: 'Cabin Condensed', sans-serif;
+  font-size:20px;
+}
+
+h2{
+  font-size:30px;
+}
+
+input{
+  background-color:#58cad6;
+}
+
+.header{
+  background-color:#3ec1d3;
+  height:100px;
+  margin-left: 0;
+  margin-right:0;
+}
+
+.footer{
+  background-color:#FF9A00;
+  height:100px;
+  margin-left:0;
+  margin-right:0;
+
+}
+
+
+.footer2{
+  background-color:#FF165d;
+  height:100px;
+  margin-left:0;
+  margin-right:0;
+
+}
